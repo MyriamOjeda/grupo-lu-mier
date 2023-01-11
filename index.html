@@ -2,11 +2,43 @@
 <html lang="en">
     <head>
         <title>Bootcamp Comafi HTML</title>
+        <!--estilos internos-->
+        <style>
+            /*OJO: esto es CSS, no es html */
+            /*estilo de etiquetas */
+            header {
+                /*vamos a poner los estilos que afectan a la etiqueta header */
+                background-color: black;
+                color: white;
+            }
+            /*el elemento p que esta dentro del header*/
+            /*regla*/
+            header p {
+                /*atributo: valor*/
+                color: yellow;
+                /*bloque de declaracion*/
+            }
+            header h1 {
+                color: green !important;
+            }
+            /*id*/
+            #segundo_parrafo {
+                color: blueviolet;
+            }
+        </style>
+        <!--3 forma externa-->
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <!--etiquetas semanticas-->
         <header>
-            <h1>Mundial Qatar 2022</h1>    
+            <h1 style="color:red;font-size: 50px;font-weight: normal;">Mundial Qatar 2022</h1>    
+            <p>
+                Soy un parrafo
+            </p>
+            <p id="segundo_parrafo">
+                Soy el segundo parrafo
+            </p>
         </header>
     <nav>
         <!--menu del sitio-->
@@ -25,6 +57,11 @@
                     Etiquetas B&aacute;sicas
                 </a>
             </li>
+            <li>
+                <a href="./pages/formularios.html">
+                    Formularios
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
@@ -39,6 +76,12 @@
             <section>
                 <h2>Jugadores</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, soluta asperiores magni nostrum architecto sapiente veritatis, iure vel facilis, autem ipsum vitae aperiam minus dolores nesciunt voluptates quod dignissimos provident.
+                </p>
+            </section>
+            <section id="secArbitros">
+                <h2>Arbitros</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita consequuntur accusantium cumque omnis alias atque, distinctio fuga nam dolores recusandae. Ex omnis necessitatibus quaerat dicta, voluptate excepturi odit enim.    
                 </p>
             </section>
             <article>
